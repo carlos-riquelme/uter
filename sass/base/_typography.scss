@@ -4,15 +4,15 @@ body {
     font-size: 1.6rem;
     line-height: 1.7;
     padding: 2rem;
-    color: $color-white;
+    color: $color-purple; //Cambiar a blanco para la landing page
 }
 
 .heading-primary {
-    color: $color-white;
+    color: $color-purple;
 
     &--main {
         text-transform: none;
-        /* text-shadow: -1px 0 rgb(121, 121, 121), 0 1px rgb(121, 121, 121), 1px 0 rgb(121, 121, 121), 0 -1px rgb(121, 121, 121); */
+        // text-shadow: -1px 0 rgb(121, 121, 121), 0 1px rgb(121, 121, 121), 1px 0 rgb(121, 121, 121), 0 -1px rgb(121, 121, 121);
         text-align: center;
         display: block;
         font-size: 6rem;
