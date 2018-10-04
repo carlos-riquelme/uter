@@ -1,0 +1,29 @@
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right, rgba(247, 171, 203, .7) , rgba(254,247,192, .1) , rgba(249,62,185, .8)), url(../img/unsplash-medium.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+        animation-name: appearLogo;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+    }
+
+    &__logo {
+        height: 10rem;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: justify;
+    }
+}

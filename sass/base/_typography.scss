@@ -1,0 +1,70 @@
+body {
+    font-family: 'Courgette', cursive;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    padding: 2rem;
+    color: $color-white;
+}
+
+.heading-primary {
+    color: $color-white;
+
+    &--main {
+        text-transform: none;
+        /* text-shadow: -1px 0 rgb(121, 121, 121), 0 1px rgb(121, 121, 121), 1px 0 rgb(121, 121, 121), 0 -1px rgb(121, 121, 121); */
+        text-align: center;
+        display: block;
+        font-size: 6rem;
+        font-weight: 600;
+        letter-spacing: 3.5rem;
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+    }
+    
+    &--sub {
+        text-transform: uppercase;
+        display: block;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 1.5rem;
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+    }
+    
+    &--sub-1 {
+        font-family: 'Lato', sans-serif;
+        /* text-shadow: -1px 0 rgb(121, 121, 121), 0 1px rgb(121, 121, 121), 1px 0 rgb(121, 121, 121), 0 -1px rgb(121, 121, 121); */
+        text-transform: uppercase;
+        display: block;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 1rem;
+        text-align: justify;
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+    }
+    
+    &--sub-2 {
+        text-transform: uppercase;
+        display: block;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 1.5rem;
+    }
+    
+    &--sub-3 {
+        font-family: 'Lato', sans-serif;
+        /* text-shadow: -1px 0 rgb(121, 121, 121), 0 1px rgb(121, 121, 121), 1px 0 rgb(121, 121, 121), 0 -1px rgb(121, 121, 121); */
+        text-transform: uppercase;
+        display: block;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 1rem;
+        text-align: justify;
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+    }
+
+}

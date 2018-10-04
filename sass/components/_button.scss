@@ -1,0 +1,26 @@
+.btn {
+    &:link,
+    &:visited {
+        padding: 1rem 7.8rem;
+        display: inline-block;
+        font-size: 7rem;
+        /* width: 30px; */
+        /* text-align: center; */
+        text-decoration: none;
+        margin: .5rem .2rem;
+        border-radius: 20%;
+        animation-name: moveInBottom;
+        animation-duration: 2s;
+        transition: all .2s;
+      }
+    
+      &:hover {
+          transform: translateY(-.3rem);
+          /* box-shadow: 0 10px 20px rgba(0, 0, 0, .2); */
+      }
+    
+      &:active {
+          transform: translateY(-.1rem);
+          /* box-shadow: 0 15px 10px rgba(0, 0, 0, .2); */
+      }
+}
