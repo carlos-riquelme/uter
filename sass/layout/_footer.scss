@@ -1,0 +1,47 @@
+.footer {
+    background-color: $color-classic-rose;
+    padding: 3rem 0;
+    // font-size: 1.4rem;
+
+    @include respond(phone) {
+        padding: 1rem 0rem 1.2rem;
+    }
+
+    &__logo-box {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    &__logo {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-purple;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+
+        }
+
+        &:hover,
+        &:active {
+            color: $color-purple;
+        }
+    }
+
+    &__copyright {
+        color: $color-purple    ;
+        border-top: 1px solid $color-purple;
+        // padding-top: 1rem;
+        width: 40%;
+        float: right;
+
+        @include respond(phone) {
+            width: 60%;
+        }
+    }
+}

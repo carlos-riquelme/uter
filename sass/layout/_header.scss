@@ -1,10 +1,14 @@
 .header {
     height: 95vh;
-    background-image: linear-gradient(to right, rgba(247, 171, 203, .7) , rgba(254,247,192, .1) , rgba(249,62,185, .8)), url(../img/unsplash-medium.jpg);
+    background-image: linear-gradient(to right, rgba(247, 171, 203, .9) , rgba(254,247,192, .3) , rgba(249,62,185, .9)), url(../img/562387-unsplash-medium.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    // clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+
+    @include respond(phone) {
+        background-image: linear-gradient(to right, rgba(247, 171, 203, .9) , rgba(254,247,192, .3) , rgba(249,62,185, .9)), url(../img/562387-unsplash-small.jpg);
+    }
 
     &__logo-box {
         position: absolute;
@@ -13,15 +17,31 @@
         animation-name: appearLogo;
         animation-duration: 3s;
         animation-timing-function: ease-out;
+
+        @include respond(phone) {
+            position: absolute;
+            transform: translate(57%, 20%);
+        }
+
     }
 
     &__logo {
         height: 10rem;
+        
+
     }
 
     &__text-box {
         position: absolute;
         top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: justify;
+    }
+    
+    &__buttons {
+        position: absolute;
+        top: 75%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: justify;
