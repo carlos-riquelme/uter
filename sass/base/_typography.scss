@@ -70,12 +70,33 @@ body {
 
 }
 
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-purple-light, $color-purple);
+    // background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 .paragraph {
     color: $color-purple;
+    font-size: 1.4rem;
+    &:not(:last-child) {
+        margin-bottom: 0.5rem;
+    }
 }
 
 .footer {
-    font-size: 1.4rem;
+    font-size: $footer-font-size;
 
     @include respond(phone) {
         font-size: .3rem;
