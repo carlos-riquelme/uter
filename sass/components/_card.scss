@@ -5,7 +5,7 @@
     height: 50rem;
 
     &__side {
-        background-color: aquamarine;
+        background-color: $color-white;
         height: 50rem;
         transition: all .8s ease;
         position: absolute;
@@ -25,15 +25,15 @@
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+                background-image: linear-gradient(to right bottom, rgba($color-maya-blue-light, .85), rgba($color-maya-blue, .85));
             }
 
             &-2 {
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+                background-image: linear-gradient(to right bottom, $color-pearl-light, $color-pearl);
             }
 
             &-3 {
-                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+                background-image: linear-gradient(to right bottom, $color-strawberry-light, $color-strawberry);
             }
         }
     }
@@ -55,15 +55,15 @@
         border-top-right-radius: 3px;
 
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../../img/562387-unsplash-small.jpg);
+            background-image: linear-gradient(to right bottom, rgba($color-maya-blue-light, .85), rgba($color-maya-blue, .85)), url(../../img/562387-unsplash-small.jpg);
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../../img/562387-unsplash-small.jpg);
+            background-image: linear-gradient(to right bottom, $color-pearl-light, $color-pearl), url(../../img/562387-unsplash-small.jpg);
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../../img/562387-unsplash-small.jpg);
+            background-image: linear-gradient(to right bottom, $color-strawberry-light, $color-strawberry), url(../../img/562387-unsplash-small.jpg);
         }
     }
 
@@ -85,20 +85,21 @@
         box-decoration-break: clone;
 
         &--1 {
-            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+            background-image: linear-gradient(to right bottom, rgba($color-purple-light-1, .85), rgba($color-purple-light, .85));
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, .85));
+            background-image: linear-gradient(to right bottom, rgba($color-pearl-light, .85), rgba($color-pearl, .85));
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));
+            background-image: linear-gradient(to right bottom, rgba($color-strawberry-light, .85), rgba($color-strawberry, .85));
         }
     }
 
     &__details {
         padding: 1rem;
+        color: $color-purple;
 
         ul {
             list-style: none;
