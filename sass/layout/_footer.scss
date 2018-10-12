@@ -17,6 +17,24 @@
         height: 10rem;
     }
 
+    &__navigation {
+        border-top: 1px solid $color-white;
+        padding-top: 2rem;
+        display: inline-block;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
     &__link {
         &:link,
         &:visited {
@@ -24,20 +42,22 @@
             text-decoration: none;
             text-transform: uppercase;
             display: inline-block;
-
+            transition: all .2s;
         }
 
         &:hover,
         &:active {
             color: $color-purple;
+            box-shadow: 0 1rem 2rem rgba($color-strawberry-dark, .2);
+            transform: rotate(5deg) scale(1.3);
         }
     }
 
     &__copyright {
-        color: $color-purple    ;
-        border-top: 1px solid $color-purple;
-        // padding-top: 1rem;
-        width: 40%;
+        color: $color-purple;
+        border-top: 1px solid $color-white;
+        padding-top: 2rem;
+        width: 50%;
         float: right;
 
         @include respond(phone) {
