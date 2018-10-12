@@ -1,5 +1,24 @@
 .section-about {
-    background-color: $color-classic-rose;
-    padding: 25rem 0;
+    background-color: $color-classic-rose-light;
+    padding: 10rem;
     margin-top: -5vh;
+}
+
+.section-features {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right, rgba(247, 171, 203, .9) , rgba(254,247,192, .3) , rgba(249,62,185, .9)), url(../img/unsplash-medium.jpg);
+
+    transform: skewY(-3deg);
+    margin-top: -4rem;
+
+    & > * {
+        transform: skewY(3deg);
+    }
+    
+}
+
+.section-talleres {
+    background-color: $color-classic-rose-light;
+    padding: 10rem 0 50rem 0;
+    margin-top: -4rem;
 }

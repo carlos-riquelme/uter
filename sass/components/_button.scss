@@ -11,13 +11,13 @@
     &:visited {
         padding: 1rem 7.5rem;
         display: inline-block;
-        font-size: 7rem;
+        // font-size: 7rem;
         /* width: 30px; */
         /* text-align: center; */
         text-decoration: none;
         color: $color-purple;
         margin: .5rem .2rem;
-        border-radius: 20%;
+        border-radius: 10rem;
         animation-name: moveInBottom;
         animation-duration: 2s;
         transition: all .2s;
@@ -48,10 +48,20 @@
 
 
       }
+
+      &--white {
+        background-color: $color-white;
+        color: $color-grey-dark;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
     
       &:hover {
           transform: translateY(-.3rem);
-          /* box-shadow: 0 10px 20px rgba(0, 0, 0, .2); */
+          
       }
     
       &:active {
