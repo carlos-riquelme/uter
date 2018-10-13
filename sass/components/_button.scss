@@ -61,6 +61,17 @@
         &::after {
             background-color: $color-white;
         }
+
+    }
+
+    &--purple {
+        background-color: $color-purple-light;
+        color: $color-grey-dark;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+
+        &::after {
+            background-color: $color-purple-light;
+        }
     }
     
       &:hover {
