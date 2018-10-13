@@ -19,7 +19,7 @@
             </label>
             <div class="navigation__background">&nbsp;</div>
             <nav class="navigation__nav">
-                <ul class="navigation__list">
+                <ul class="navigation__list" id="menu">
                     <li class="navigation__item"><a href="#about" class="navigation__link"><span>01</span>Sobre nosotras</a></li>
                     <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>La misión</a></li>
                     <li class="navigation__item"><a href="#talleres" class="navigation__link"><span>03</span>Nuestros talleres</a></li>
@@ -346,5 +346,17 @@
                     </div>
                 </div>
             </div>
+    <script>
+        var menu = document.getElementById('menu');
+            var closeIcon = document.getElementById("navi-toggle");
+
+        menu.addEventListener('click', handleMenuClick);
+
+        function handleMenuClick(event) {
+            if (event.target instanceof HTMLAnchorElement) {
+            closeIcon.checked = false;
+      }
+    }
+    </script>
     </body>
 </html>
