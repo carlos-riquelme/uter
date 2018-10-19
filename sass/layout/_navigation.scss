@@ -16,6 +16,11 @@
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
         text-align: center;
         cursor: pointer;
+
+        @include respond(iphone5) {
+            height: 5rem;
+            width: 5rem;
+        }
     }
 
     &__background {
@@ -28,6 +33,13 @@
         background-image: radial-gradient($color-maya-blue-light, $color-maya-blue);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86,0,0.07,1);
+
+        @include respond(iphone5) {
+            height: 5rem;
+            width: 5rem;
+            top: 6rem;
+            right: 6rem;
+        }
 
         // transform: scale(80);
     }
@@ -72,6 +84,11 @@
         background-size: 220%;
         transition: all .4s;
 
+        @include respond(iphone5) {
+            font-size: 2rem;
+            padding: 0;
+        }
+
         span {
             margin-right: 1rem;
             display: inline-block;
@@ -102,6 +119,10 @@
         position: relative;
         margin-top: 3.5rem;
 
+        @include respond(iphone5) {
+            margin-top: 2.5rem;
+        }
+
         &,
         &::before,
         &::after {
@@ -109,6 +130,10 @@
             height: 2px;
             background-color: $color-strawberry;
             display: inline-block;
+
+            @include respond(iphone5) {
+                width: 2rem;
+            }
         }
 
         &::before,

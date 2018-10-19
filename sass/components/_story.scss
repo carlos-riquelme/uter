@@ -8,6 +8,11 @@
     padding-left: 9rem;
     font-size: $default-font-size;
     transform: skewX(-12deg);
+
+    @include respond(iphone5) {
+        width: 90%;
+        padding: 5rem;
+    }
      
     &__shape {
         width: 15rem;

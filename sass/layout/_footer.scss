@@ -63,5 +63,9 @@
         @include respond(phone) {
             width: 60%;
         }
+
+        @include respond(iphone5) {
+            width: 80%;
+        }
     }
 }

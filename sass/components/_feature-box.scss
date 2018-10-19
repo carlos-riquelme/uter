@@ -16,6 +16,10 @@
     // background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
+
+        @include respond(iphone5) {
+            font-size: 4rem;
+        }
     }
 
     &:hover {

@@ -23,12 +23,19 @@
             transform: translate(57%, 20%);
         }
 
+        @include respond(iphone5) {
+            top: 1rem;
+            left: 1rem;
+        }
+
     }
 
     &__logo {
         height: 10rem;
         
-
+        @include respond(iphone5) {
+            height: 7rem;
+        }
     }
 
     &__text-box {

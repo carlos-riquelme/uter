@@ -115,6 +115,11 @@
                     border-bottom: 1px solid $color-grey-light-2;
                 }
 
+                @include respond(iphone5) {
+                    font-size: 1.3rem;
+                    padding: .5rem;
+                }
+
             }
         }
     }

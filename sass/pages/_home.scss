@@ -2,6 +2,10 @@
     background-color: $color-classic-rose-light;
     padding: 10rem;
     margin-top: -5vh;
+
+    @include respond(iphone5) {
+        padding: 5rem;
+    }
 }
 
 .section-features {
@@ -32,6 +36,10 @@
 .section-book {
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom, $color-pale-yellow-light, $color-pale-yellow);
+
+    @include respond(iphone5) {
+        padding: 2rem 0;
+    }
 }
 
 .book {
@@ -43,5 +51,9 @@
     &__form {
         width: 50%;
         padding: 6rem;
+
+        @include respond(iphone5) {
+            width: 60%;
+        }
     }
 }
