@@ -10,8 +10,9 @@
     transform: skewX(-12deg);
 
     @include respond(iphone5) {
-        width: 90%;
+        width: 100%;
         padding: 5rem;
+        transform: skewX(0);
     }
      
     &__shape {
@@ -22,6 +23,10 @@
         position: relative;
         clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg);
+
+        @include respond(iphone5) {
+            transform: translateX(-3rem) skewX(0);
+        }
     }
 
     &__img {
@@ -33,6 +38,10 @@
 
     &__text {
         transform: skewX(12deg);
+
+        @include respond(iphone5) {
+            transform: skewX(0);
+        }
     }
 
     &__caption {

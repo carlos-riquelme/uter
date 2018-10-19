@@ -1,13 +1,19 @@
 .row {
     max-width: $grid-width;
     margin: 0 auto;
-
-    @include respond(iphone5) {
-        max-width: $grid-width-iphone5;
-    }
     
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+
+        @include respond(iphone5) {
+            margin-bottom: $gutter-vertical-small;
+        }
+    }
+
+    @include respond(iphone5) {
+        // max-width: $grid-width-iphone5;
+        max-width: 50rem;
+        padding: 0 3rem;
     }
 
     @include clearfix;
@@ -19,8 +25,14 @@
             margin-right: $gutter-horizontal;
 
             @include respond(iphone5) {
-                margin-right: $gutter-horizontal-iphone5;
+                // margin-right: $gutter-horizontal-iphone5;
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
             }
+        }
+
+        @include respond(iphone5) {
+            width: 100% !important;
         }
     }
 

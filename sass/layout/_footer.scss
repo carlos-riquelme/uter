@@ -21,6 +21,11 @@
         border-top: 1px solid $color-white;
         padding-top: 2rem;
         display: inline-block;
+
+        @include respond(phone) {
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__list {
@@ -61,11 +66,15 @@
         float: right;
 
         @include respond(phone) {
-            width: 60%;
+            width: 100%;
+            float: none;
+            text-align: center;
         }
 
         @include respond(iphone5) {
-            width: 80%;
+            width: 100%;
+            float: none;
+            text-align: center;
         }
     }
 }
