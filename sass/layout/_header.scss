@@ -6,7 +6,9 @@
     position: relative;
     // clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
 
-    @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 75em) {
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), 
+            only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+            only screen and (min-width: 75em) {
         background-image: linear-gradient(to right, rgba(247, 171, 203, .9) , rgba(254,247,192, .3) , rgba(249,62,185, .9)), url(../img/562387-unsplash-medium.jpg);
     }
 
@@ -34,6 +36,60 @@
 
     }
 
+    &__logo-bg {
+        position: absolute;
+        top: 4rem;
+        left: 24rem;
+        animation-name: appearLogo;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+
+        @include respond(ipad-pro) {
+            left: 22rem;
+        }
+
+        @include respond(tab-port) {
+            left: 20rem;
+        }
+
+        @include respond(iphone) {
+            top: 5rem;
+            left: 10rem;
+        }
+
+        @include respond(iphone5) {
+            left: 13rem;
+        }
+
+        
+    }
+
+    &__logobg {
+        height: 60rem;
+
+        @include respond(tab-land) {
+            height: 52rem;
+        }
+
+        @include respond(ipadpro) {
+            height: 38rem;
+        }
+
+        @include respond(tab-port) {
+            height: 33rem;
+        }
+
+        @include respond(iphone) {
+            height: 26rem;
+        }
+
+        @include respond(iphone5) {
+            height: 28rem;
+        }
+
+        
+    }
+
     &__logo {
         height: 10rem;
         
@@ -52,7 +108,7 @@
     
     &__buttons {
         position: absolute;
-        top: 75%;
+        top: 90%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: justify;

@@ -30,35 +30,31 @@ components
 
 html {
   font-size: 62.5%; }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     html {
       font-size: 37.5%; } }
-  @media only screen and (max-width: 43.75em) {
+  @media (max-width: 43.75em) {
     html {
       font-size: 43.75%; } }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 75em) {
+  @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (max-width: 62.5em) {
+  @media (max-width: 62.5em) {
     html {
       font-size: 62.5%; } }
-  @media only screen and (min-width: 112.5em) {
+  @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
 
 body {
   box-sizing: border-box;
   padding: 3rem; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     body {
       padding: 0; } }
-
-::selection {
-  background-color: #73dcc3;
-  color: white; }
 
 @keyframes moveInLeft {
   0% {
@@ -105,7 +101,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: white; }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     body {
       font-size: .3rem; } }
 
@@ -121,11 +117,11 @@ body {
     animation-name: moveInLeft;
     animation-duration: 2s;
     animation-timing-function: ease-out; }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
         font-size: 4.5rem; } }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .heading-primary--main {
         letter-spacing: .5rem;
         font-size: 6.5rem; } }
@@ -140,11 +136,11 @@ body {
     text-align: justify;
     animation-name: moveInLeft;
     animation-duration: 2s; }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: .5rem;
         font-size: 1rem; } }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .heading-primary--sub {
         letter-spacing: .5rem;
         font-size: 1.8rem; } }
@@ -157,7 +153,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent; }
-  @media only screen and (max-width: 43.75em) {
+  @media (max-width: 43.75em) {
     .heading-secondary {
       font-size: 2.5rem; } }
 
@@ -166,7 +162,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #ab9ac9; }
-  @media only screen and (max-width: 43.75em) {
+  @media (max-width: 43.75em) {
     .heading-tertiary {
       font-size: 1.3rem; } }
 
@@ -175,16 +171,16 @@ body {
   font-size: 1.5rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 0.5rem; }
-  @media only screen and (max-width: 43.75em) {
+  @media (max-width: 43.75em) {
     .paragraph {
       font-size: 1.2rem; } }
 
 .footer {
   font-size: 1.4rem; }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .footer {
       font-size: .3rem; } }
-  @media only screen and (max-width: 43.75em) {
+  @media (max-width: 43.75em) {
     .footer {
       font-size: 1.1rem; } }
 
@@ -229,22 +225,22 @@ body {
     transition: all .2s;
     border: none;
     cursor: pointer; }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .btn, .btn:link, .btn:visited {
         padding: 0 6.5rem;
         font-size: 4rem;
         margin: 2rem 1.2rem 0 .5rem; } }
-    @media only screen and (max-width: 75em) {
+    @media (max-width: 75em) {
       .btn, .btn:link, .btn:visited {
         padding: 1rem 1.8rem;
         font-size: 6rem;
         margin: 2rem 1.2rem 0 .5rem; } }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .btn, .btn:link, .btn:visited {
         padding: 0 1.5rem;
         font-size: 5rem;
         margin: 3rem .2rem 2.2rem 0; } }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .btn, .btn:link, .btn:visited {
         padding: 0 .8rem;
         font-size: 4rem;
@@ -255,10 +251,10 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
     .btn--white::after {
       background-color: white; }
-    @media only screen and (max-width: 75em) {
+    @media (max-width: 75em) {
       .btn--white {
         font-size: 2.5rem; } }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .btn--white {
         font-size: 2.5rem; } }
   .btn--purple {
@@ -352,7 +348,7 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
-        @media only screen and (max-width: 43.75em) {
+        @media (max-width: 43.75em) {
           .card__details ul li {
             font-size: 1.3rem;
             padding: .5rem; } }
@@ -373,7 +369,7 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
-  @media only screen and (max-width: 43.75em), only screen and (hover: none) {
+  @media (max-width: 43.75em) {
     .card {
       height: auto;
       border-radius: 3px;
@@ -411,7 +407,7 @@ body {
     position: absolute;
     transition: all .2s;
     outline-offset: 2rem; }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .composition__photo {
         position: relative;
         width: 80%; } }
@@ -436,7 +432,7 @@ body {
     background-image: linear-gradient(to right, #ab9ac9, #472289);
     -webkit-background-clip: text;
     color: transparent; }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .feature-box__icon {
         font-size: 4rem; } }
   .feature-box:hover {
@@ -444,7 +440,7 @@ body {
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
-  @media only screen and (max-width: 43.75em) {
+  @media (max-width: 43.75em) {
     .form__group:not(:last-child) {
       margin-bottom: 0; } }
 
@@ -538,7 +534,7 @@ body {
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
       background-color: rgba(0, 0, 0, 0.3); } }
-  @media only screen and (max-width: 43.75em) {
+  @media (max-width: 43.75em) {
     .popup {
       height: 90vh; } }
   .popup__content {
@@ -555,13 +551,13 @@ body {
     opacity: 0;
     transform: translate -50%, -50% scale(0.5);
     transition: all .4s .2s; }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .popup__content {
         width: 90%; } }
   .popup__left {
     width: 33.333333%;
     display: table-cell; }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .popup__left {
         width: 0; } }
   .popup__right {
@@ -569,13 +565,13 @@ body {
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .popup__right {
         width: 100%; } }
   .popup__img {
     display: block;
     width: 100%; }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .popup__img {
         display: none; } }
   .popup__text {
@@ -586,7 +582,7 @@ body {
     column-gap: 4rem;
     column-rule: 1px solid #999;
     hyphens: auto; }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .popup__text {
         font-size: 1.3rem;
         margin-bottom: 2rem; } }
@@ -619,7 +615,7 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
-  @media only screen and (max-width: 43.75em) {
+  @media (max-width: 43.75em) {
     .story {
       width: 100%;
       padding: 5rem;
@@ -638,7 +634,7 @@ body {
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
         border-radius: none; } }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .story__shape {
         transform: translateX(-3rem) skewX(0); } }
   .story__img {
@@ -648,7 +644,7 @@ body {
     transition: all .5s; }
   .story__text {
     transform: skewX(12deg); }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .story__text {
         transform: skewX(0); } }
   .story__caption {
@@ -675,10 +671,10 @@ body {
   background-size: cover;
   background-position: top;
   position: relative; }
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 75em) {
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 75em) {
     .header {
       background-image: linear-gradient(to right, rgba(247, 171, 203, 0.9), rgba(254, 247, 192, 0.3), rgba(249, 62, 185, 0.9)), url(../img/562387-unsplash-medium.jpg); } }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .header {
       background-image: linear-gradient(to right, rgba(247, 171, 203, 0.9), rgba(254, 247, 192, 0.3), rgba(249, 62, 185, 0.9)), url(../img/562387-unsplash-small.jpg); } }
   .header__logo-box {
@@ -688,11 +684,11 @@ body {
     animation-name: appearLogo;
     animation-duration: 3s;
     animation-timing-function: ease-out; }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .header__logo-box {
         position: absolute;
         transform: translate(57%, 20%); } }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .header__logo-box {
         top: 1rem;
         left: 1rem; } }
@@ -703,29 +699,29 @@ body {
     animation-name: appearLogo;
     animation-duration: 3s;
     animation-timing-function: ease-out; }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .header__logo-bg {
         left: 20rem; } }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .header__logo-bg {
         left: 13rem; } }
   .header__logobg {
     height: 60rem; }
-    @media only screen and (max-width: 75em) {
+    @media (max-width: 75em) {
       .header__logobg {
         height: 52rem; } }
-    @media only screen and (max-width: 62.5em) {
+    @media (max-width: 62.5em) {
       .header__logobg {
         height: 38rem; } }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .header__logobg {
         height: 33rem; } }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .header__logobg {
         height: 28rem; } }
   .header__logo {
     height: 10rem; }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .header__logo {
         height: 7rem; } }
   .header__text-box {
@@ -746,10 +742,10 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
-  @media only screen and (max-width: 43.75em) {
+  @media (max-width: 43.75em) {
     .row {
       max-width: 50rem;
       padding: 0 3rem; } }
@@ -761,28 +757,28 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media only screen and (max-width: 43.75em) {
+      @media (max-width: 43.75em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 6rem; } }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .row [class^="col-"] {
         width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .row .col-1-of-2 {
         width: calc((100% - 3rem) / 2); } }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .row .col-1-of-3 {
         width: calc((100% - 2 * 3rem) / 3); } }
   .row .col-2-of-3 {
     width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .row .col-1-of-4 {
         width: calc((100% - 3 * 3rem) / 4); } }
   .row .col-2-of-4 {
@@ -793,7 +789,7 @@ body {
 .footer {
   background-color: #f7ccde;
   padding: 3rem 0; }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .footer {
       padding: 1rem 0rem 1.2rem; } }
   .footer__logo-box {
@@ -806,7 +802,7 @@ body {
     border-top: 1px solid white;
     padding-top: 2rem;
     display: inline-block; }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .footer__navigation {
         width: 100%;
         text-align: center; } }
@@ -832,12 +828,12 @@ body {
     padding-top: 2rem;
     width: 50%;
     float: right; }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .footer__copyright {
         width: 100%;
         float: none;
         text-align: center; } }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .footer__copyright {
         width: 100%;
         float: none;
@@ -858,7 +854,7 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
-  @media only screen and (max-width: 43.75em) {
+  @media (max-width: 43.75em) {
     .navigation__button {
       height: 5rem;
       width: 5rem; } }
@@ -873,7 +869,7 @@ body {
   background-image: radial-gradient(#c3e5fe, #7cc6fe);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
-  @media only screen and (max-width: 43.75em) {
+  @media (max-width: 43.75em) {
     .navigation__background {
       height: 5rem;
       width: 5rem;
@@ -912,7 +908,7 @@ body {
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
   background-size: 220%;
   transition: all .4s; }
-  @media only screen and (max-width: 43.75em) {
+  @media (max-width: 43.75em) {
     .navigation__link:link, .navigation__link:visited {
       font-size: 2rem;
       padding: 0; } }
@@ -936,7 +932,7 @@ body {
 .navigation__icon {
   position: relative;
   margin-top: 3.5rem; }
-  @media only screen and (max-width: 43.75em) {
+  @media (max-width: 43.75em) {
     .navigation__icon {
       margin-top: 2.5rem; } }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
@@ -944,7 +940,7 @@ body {
     height: 2px;
     background-color: #f245b9;
     display: inline-block; }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .navigation__icon, .navigation__icon::before, .navigation__icon::after {
         width: 2rem; } }
   .navigation__icon::before, .navigation__icon::after {
@@ -978,7 +974,7 @@ body {
   background-color: #fcecf3;
   padding: 10rem;
   margin-top: -5vh; }
-  @media only screen and (max-width: 43.75em) {
+  @media (max-width: 43.75em) {
     .section-about {
       padding: 5rem; } }
 
@@ -989,7 +985,7 @@ body {
   margin-top: -4rem; }
   .section-features > * {
     transform: skewY(3deg); }
-  @media only screen and (max-width: 43.75em) {
+  @media (max-width: 43.75em) {
     .section-features {
       padding: 10rem; } }
 
@@ -997,7 +993,7 @@ body {
   background-color: #fcecf3;
   padding: 10rem 0 15rem 0;
   margin-top: -4rem; }
-  @media only screen and (max-width: 43.75em) {
+  @media (max-width: 43.75em) {
     .section-talleres {
       padding: 10rem; } }
 
@@ -1005,14 +1001,14 @@ body {
   padding: 7rem 0;
   background-color: white;
   position: relative; }
-  @media only screen and (max-width: 43.75em) {
+  @media (max-width: 43.75em) {
     .section-stories {
       padding: 5rem; } }
 
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #fefbe2, #fef7c0); }
-  @media only screen and (max-width: 43.75em) {
+  @media (max-width: 43.75em) {
     .section-book {
       padding: 2rem 0; } }
 
@@ -1021,14 +1017,310 @@ body {
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
-  @media only screen and (max-width: 43.75em) {
+  @media (max-width: 43.75em) {
     .book {
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../../img/746009.jpg);
       background-size: cover; } }
   .book__form {
     width: 50%;
     padding: 6rem; }
-    @media only screen and (max-width: 43.75em) {
+    @media (max-width: 43.75em) {
       .book__form {
         background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, transparent 65%), url(../../img/746009.jpg);
         width: 100%; } }
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "linea-weather-10";
+  src:url("fonts/linea-weather-10.eot");
+  src:url("fonts/linea-weather-10.eot?#iefix") format("embedded-opentype"),
+    url("fonts/linea-weather-10.woff") format("woff"),
+    url("fonts/linea-weather-10.ttf") format("truetype"),
+    url("fonts/linea-weather-10.svg#linea-weather-10") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "linea-weather-10" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "linea-weather-10" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-weather-aquarius:before {
+  content: "\e000";
+}
+.icon-weather-aries:before {
+  content: "\e001";
+}
+.icon-weather-cancer:before {
+  content: "\e002";
+}
+.icon-weather-capricorn:before {
+  content: "\e003";
+}
+.icon-weather-cloud:before {
+  content: "\e004";
+}
+.icon-weather-cloud-drop:before {
+  content: "\e005";
+}
+.icon-weather-cloud-lightning:before {
+  content: "\e006";
+}
+.icon-weather-cloud-snowflake:before {
+  content: "\e007";
+}
+.icon-weather-downpour-fullmoon:before {
+  content: "\e008";
+}
+.icon-weather-downpour-halfmoon:before {
+  content: "\e009";
+}
+.icon-weather-downpour-sun:before {
+  content: "\e00a";
+}
+.icon-weather-drop:before {
+  content: "\e00b";
+}
+.icon-weather-first-quarter:before {
+  content: "\e00c";
+}
+.icon-weather-fog:before {
+  content: "\e00d";
+}
+.icon-weather-fog-fullmoon:before {
+  content: "\e00e";
+}
+.icon-weather-fog-halfmoon:before {
+  content: "\e00f";
+}
+.icon-weather-fog-sun:before {
+  content: "\e010";
+}
+.icon-weather-fullmoon:before {
+  content: "\e011";
+}
+.icon-weather-gemini:before {
+  content: "\e012";
+}
+.icon-weather-hail:before {
+  content: "\e013";
+}
+.icon-weather-hail-fullmoon:before {
+  content: "\e014";
+}
+.icon-weather-hail-halfmoon:before {
+  content: "\e015";
+}
+.icon-weather-hail-sun:before {
+  content: "\e016";
+}
+.icon-weather-last-quarter:before {
+  content: "\e017";
+}
+.icon-weather-leo:before {
+  content: "\e018";
+}
+.icon-weather-libra:before {
+  content: "\e019";
+}
+.icon-weather-lightning:before {
+  content: "\e01a";
+}
+.icon-weather-mistyrain:before {
+  content: "\e01b";
+}
+.icon-weather-mistyrain-fullmoon:before {
+  content: "\e01c";
+}
+.icon-weather-mistyrain-halfmoon:before {
+  content: "\e01d";
+}
+.icon-weather-mistyrain-sun:before {
+  content: "\e01e";
+}
+.icon-weather-moon:before {
+  content: "\e01f";
+}
+.icon-weather-moondown-full:before {
+  content: "\e020";
+}
+.icon-weather-moondown-half:before {
+  content: "\e021";
+}
+.icon-weather-moonset-full:before {
+  content: "\e022";
+}
+.icon-weather-moonset-half:before {
+  content: "\e023";
+}
+.icon-weather-move2:before {
+  content: "\e024";
+}
+.icon-weather-newmoon:before {
+  content: "\e025";
+}
+.icon-weather-pisces:before {
+  content: "\e026";
+}
+.icon-weather-rain:before {
+  content: "\e027";
+}
+.icon-weather-rain-fullmoon:before {
+  content: "\e028";
+}
+.icon-weather-rain-halfmoon:before {
+  content: "\e029";
+}
+.icon-weather-rain-sun:before {
+  content: "\e02a";
+}
+.icon-weather-sagittarius:before {
+  content: "\e02b";
+}
+.icon-weather-scorpio:before {
+  content: "\e02c";
+}
+.icon-weather-snow:before {
+  content: "\e02d";
+}
+.icon-weather-snow-fullmoon:before {
+  content: "\e02e";
+}
+.icon-weather-snow-halfmoon:before {
+  content: "\e02f";
+}
+.icon-weather-snow-sun:before {
+  content: "\e030";
+}
+.icon-weather-snowflake:before {
+  content: "\e031";
+}
+.icon-weather-star:before {
+  content: "\e032";
+}
+.icon-weather-storm-11:before {
+  content: "\e033";
+}
+.icon-weather-storm-32:before {
+  content: "\e034";
+}
+.icon-weather-storm-fullmoon:before {
+  content: "\e035";
+}
+.icon-weather-storm-halfmoon:before {
+  content: "\e036";
+}
+.icon-weather-storm-sun:before {
+  content: "\e037";
+}
+.icon-weather-sun:before {
+  content: "\e038";
+}
+.icon-weather-sundown:before {
+  content: "\e039";
+}
+.icon-weather-sunset:before {
+  content: "\e03a";
+}
+.icon-weather-taurus:before {
+  content: "\e03b";
+}
+.icon-weather-tempest:before {
+  content: "\e03c";
+}
+.icon-weather-tempest-fullmoon:before {
+  content: "\e03d";
+}
+.icon-weather-tempest-halfmoon:before {
+  content: "\e03e";
+}
+.icon-weather-tempest-sun:before {
+  content: "\e03f";
+}
+.icon-weather-variable-fullmoon:before {
+  content: "\e040";
+}
+.icon-weather-variable-halfmoon:before {
+  content: "\e041";
+}
+.icon-weather-variable-sun:before {
+  content: "\e042";
+}
+.icon-weather-virgo:before {
+  content: "\e043";
+}
+.icon-weather-waning-cresent:before {
+  content: "\e044";
+}
+.icon-weather-waning-gibbous:before {
+  content: "\e045";
+}
+.icon-weather-waxing-cresent:before {
+  content: "\e046";
+}
+.icon-weather-waxing-gibbous:before {
+  content: "\e047";
+}
+.icon-weather-wind:before {
+  content: "\e048";
+}
+.icon-weather-wind-e:before {
+  content: "\e049";
+}
+.icon-weather-wind-fullmoon:before {
+  content: "\e04a";
+}
+.icon-weather-wind-halfmoon:before {
+  content: "\e04b";
+}
+.icon-weather-wind-n:before {
+  content: "\e04c";
+}
+.icon-weather-wind-ne:before {
+  content: "\e04d";
+}
+.icon-weather-wind-nw:before {
+  content: "\e04e";
+}
+.icon-weather-wind-s:before {
+  content: "\e04f";
+}
+.icon-weather-wind-se:before {
+  content: "\e050";
+}
+.icon-weather-wind-sun:before {
+  content: "\e051";
+}
+.icon-weather-wind-sw:before {
+  content: "\e052";
+}
+.icon-weather-wind-w:before {
+  content: "\e053";
+}
+.icon-weather-windgust:before {
+  content: "\e054";
+}
